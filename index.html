@@ -78,5 +78,14 @@
 
     setInterval(createHeart, 300);
   </script>
+  <script>
+  const music = document.getElementById('bg-music');
+  // Sayfaya tıklandığında sesi aç
+  document.body.addEventListener('click', () => {
+    music.muted = false;
+    music.play();
+  }, { once: true });
+  </script>
+
 </body>
 </html>
